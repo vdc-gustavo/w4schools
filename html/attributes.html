@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../media/img/favicon.ico" type="image/x-icon">
+    <title>Atributos em HTML</title>
+</head>
+
+<body>
+    <h1>Atributos HTML</h1>
+    <nav class="button">
+        <a href="elements.html">Anterior</a> <a href="headings.html">Próxima</a>
+    </nav>
+    <hr>
+    <p>Os atributos HTML fornecem informações adicionais sobre os elementos HTML.</p>
+    <hr>
+    <h2>Atributos HTML</h2>
+    <ul>
+        <li>Todos os elementos HTML podem ter <b>atributos</b></li>
+        <li>Os atributos fornecem <b>informações adicionais</b> sobre os elementos</li>
+        <li>Os atributos são sempre especificados na <b>tag inicial</b></li>
+        <li>Os atributos geralmente vêm em pares nome / valor como: nome = "valor"</li>
+    </ul>
+    <hr>
+    <h2>O Atributo href</h2>
+    <p>A tag <code class="codebkg">&lt;a&gt;</code> define um hiperlink. O atributo href especifica o URL da página para a qual o link vai:</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exinside">
+            <p><code>&lt;a href="<code style="color: #003eb1;">https://www.w3schools.com</code>"&gt;</code>Visite
+                w3schools.com<code>&lt;/a&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <div class="exinside">
+                <a href="index.html">Visite Newbieschools</a>
+            </div>
+        </details>
+    </section>
+    <p>Você vai aprender mais sobre links em: <a href="links.html">Links em HTML</a></p>
+    <hr>
+    <h2>O Atributo src</h2>
+    <p>A tag <code class="codebkg">&lt;img&gt;</code> é usada para incorporar uma imagem em uma página HTML. O atributo src especifica o caminho para
+        a imagem a ser exibida:</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exinside">
+            <p><code>&lt;img src=<code class="codebl">"img_girl.jpg"</code>&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <div class="exinside">
+                <img src="img_girl.png">
+            </div>
+        </details>
+    </section>
+    <br>
+    <p>Existem duas maneiras de especificar o URL no atributo <code class="codebkg">src</code>:</p>
+    <ol>
+        <li><b>URL absoluto</b> - Links para uma imagem externa hospedada em outro site. Exemplo: src =
+            "https://www.w3schools.com/images/img_girl.jpg".
+        </li>
+        <p><b>Nota:</b>Imagens externas podem estar protegidas por direitos autorais. Se você não obtiver permissão para
+            usá-lo, pode estar violando as leis de direitos autorais. Além disso, você não pode controlar imagens
+            externas; ele pode ser removido ou alterado repentinamente.</p>
+        <br>
+        <li><b>URL relativo</b> - Links para uma imagem hospedada no site. Aqui, o URL não inclui o nome do domínio. Se
+            o URL começar sem barra, ele será relativo à página atual. Exemplo: src = "img_girl.jpg". Se o URL começar
+            com uma barra, será relativo ao domínio. Exemplo src="/images/img_girl.jpg".</li>
+        <p><b>Dica:</b> quase sempre é melhor usar URLs relativos. Eles não irão quebrar se você mudar de domínio.</p>
+    </ol>
+    <hr>
+    <h2>Os atributos de largura e altura</h2>
+    <p>A tag <code class="codebkg">&lt;img&gt;</code> também deve conter os atributos de <code class="codebkg">width</code> e <code class="codebkg">height</code>, que
+        especificam a largura e a altura da imagem (em pixels):</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exinside">
+            <p><code>&lt;img src="<code style="color: blue;">img_girl.jpg</code>" width="<code style="color: blue;">500</code>"
+                    height="<code style="color: blue;">600</code>"&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <div class="exinside"><img src="img_girl.jpg" width="500" height="600"></div>
+        </details>
+    </section>
+    <h2>O Atributo alt</h2>
+    <p>O atributo <code class="codebkg">alt</code> obrigatório para a tag <code class="codebkg">&lt;img&gt;</code> especifica um texto alternativo para
+        uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido à conexão lenta ou a um
+        erro no atributo <code class="codebkg">src</code>, ou se o usuário usa um leitor de tela.</p>
+    <section class="exemplo-s">
+        <h3>Exemplo</h3>
+        <div class="exinside">
+            <p><code>&lt;img src="<code style="color: blue;">img_girl.jpg</code>" alt="<code style="color: blue;">Garota com jaqueta</code>"&gt;</code></p>
+        </div>
+    </section>
+    <br>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <p>Veja o que acontece se tentarmos exibir uma imagem que não existe:</p>
+        <div class="exinside">
+            <p><code>img src=<code class="codebl">"img_girl.jpg"</code> alt=<code class="codebl">"Garota com jaqueta"</code></code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <img src="../media/img/imgerror.png" alt="imagem de erro">
+        </details>
+    </section>
+    <p>Você vai aprender mais sobre imagens em <a href="images.html">Imagens em HTML</a></p>
+    <hr>
+    <br>
+    <hr>
+    <h2>O Atributo style</h2>
+    <p>O atributo <code>style</code> é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito
+        mais.</p>
+    <h3>Exemplo</h3>
+    <p><code>&lt; style="color:red;"&gt;</code>Esse é um parágrafo vermelho.<code>&lt;/p&gt;</code></p>
+    <p>Você aprenderá mais sobre estilos em nosso capítulo <a href="styles.html">Estilos em HTML</a>.</p>
+    <a href="headings.html">Próxima página</a>
+    <p><a href="index2.html">Índice</a></p>
+</body>
+
+</html>

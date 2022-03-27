@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../media/img/favicon.ico" type="image/x-icon">
+    <title>Elementos HTML</title>
+</head>
+
+<body>
+    <h1>Elementos em HTML</h1>
+    <nav class="button">
+        <a href="basic.html">Anterior</a> <a href="attributes.html">Próxima</a>
+    </nav>
+    <hr>
+    <p>Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final.</p>
+    <h2>Elementos HTML</h2>
+    <p>O <b>elemento</b> HTML é tudo desde a tag inicial até a tag final:</p>
+    <p><code class="codebkg">&lt;tag&gt;</code>Conteúdo vem aqui...<code class="codebkg">&lt;/tag&gt;</code></p>
+    <p style="margin:28px 0px;">Exemplos de alguns elementos HTML:</p>
+    <div class="exinline">
+        <p><code class="codebkg">&lt;h1&gt;</code>Meu primeiro título<code class="codebkg">&lt;/h1&gt;</code></p>
+        <p><code class="codebkg">&lt;p&gt;</code>Meu primeiro parágrafo<code class="codebkg">&lt;/p&gt;</code></p>
+    </div>
+
+    <p style="color: red;">exemplo incompleto (tabelas)</p>
+    <p class="nota"><b>Nota:</b> alguns elementos HTML não têm conteúdo (como o elemento <code
+            style="color: black ;">&lt;br&gt;</code>). Esses elementos
+        são chamados de
+        elementos vazios. Os elementos vazios não possuem uma tag de finalização!</p>
+    <hr>
+    <h2>Elementos HTML aninhados</h2>
+    <p>Os elementos HTML podem ser aninhados (isso significa que os elementos podem conter outros elementos).</p>
+    <p>Todos os documentos HTML consistem em elementos HTML aninhados.</p>
+    <p>O exemplo a seguir contém quatro elementos HTML (<code class="codebkg">&lt;html&gt;</code>, <code
+            class="codebkg">&lt;body&gt;</code>,
+        <code class="codebkg">&lt;h1&gt;</code> e <code class="codebkg">&lt;p&gt;</code>):</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exinside">
+            <p><code>&lt;!DOCTYPE html&gt;</code></p>
+            <p><code>&lt;html&gt;</code></p>
+            <p><code>&lt;body&gt;</code></p>
+            <p><code>&lt;h1&gt;</code>Meu primeiro título<code>&lt;/h1&gt;</code></p>
+            <p><code>&lt;p&gt;</code>Meu primeiro parágrafo<code>&lt;/p&gt;</code></p>
+            <p><code>&lt;body&gt;</code></p>
+            <p><code>&lt;html&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <div class="exinside">
+                <h1>Meu primeiro título</h1>
+                <p>Meu primeiro parágrafo.</p>
+            </div>
+        </details>
+    </section>
+
+    <h2>Explicando o exemplo</h2>
+    <p>O elemento <code class="codebkg">&lt;html&gt;</code> é o elemento raiz e define todo o documento HTML.</p>
+    <p>Possui uma tag inicial <code class="codebkg">&lt;html&gt;</code> e uma tag final <code
+            class="codebkg">&lt;/html&gt;</code>.</p>
+    <p>Então, dentro do elemento <code class="codebkg">&lt;html&gt;</code>, há um elemento <code
+            class="codebkg">&lt;body&gt;</code>:</p>
+    <section class="exemplo-s">
+        <div class="exinside">
+            <p><code>&lt;body&gt;</code></p>
+            <p><code>&lt;h1&gt;</code>Meu primeiro título<code>&lt;/h1&gt;</code></p>
+            <p><code>&lt;p&gt;</code>Meu primeiro parágrafo<code>&lt;/p&gt;</code></p>
+            <p><code>&lt;/body&gt;</code></p>
+        </div>
+    </section>
+
+    <p>O elemento <code class="codebkg">&lt;body&gt;</code> define o corpo do documento</p>
+    <p>Possui uma tag inicial <code class="codebkg">&lt;body&gt;</code> e uma tag final &lt;/body&gt;.</p>
+    <p>Então, dentro do elemento <code class="codebkg">&lt;body&gt;</code>, existem dois outros elementos: <code
+            class="codebkg">&lt;h1&gt;</code> e <code class="codebkg">&lt;p&gt;</code>:</p>
+    <section class="exemplo-s">
+        <div class="exinside">
+            <p><code>&lt;h1&gt;</code>Meu primeiro título<code>&lt;/h1&gt;</code>
+            </p>
+            <p><code>&lt;p&gt;</code>Meu primeiro parágrafo<code>&lt;/p&gt;</code></p>
+        </div>
+    </section>
+
+    <p>O elemento <code class="codebkg">&lt;h1&gt;</code> define um cabeçalho de nível 1</p>
+    <p>Possui uma tag inicial <code class="codebkg">&lt;h1&gt;</code> e uma tag final <code
+            class="codebkg">&mei/h1&gt;</code>.</p>
+    <section class="exemplo-s">
+        <div class="exinside">
+            <p><code>&lt;h1&gt;</code>Meu primeiro título<code>&lt;/h1&gt;</code>
+            </p>
+        </div>
+    </section>
+
+    <p>O elemento <code class="codebkg">&lt;p&gt;</code> define um parágrafo.</p>
+    <p>Possui uma tag inicial <code class="codebkg">&lt;p&gt;</code> e uma tag final <code
+            class="codebkg">&lt;/p&gt;</code>.</p>
+    <section class="exemplo-s">
+        <div class="exinside">
+            <p><code>&lt;p&gt;</code>Meu primeiro parágrafo<code>&lt;/p&gt;</code>
+            </p>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <hr>
+    <h2>Nunca pule a tag final</h2>
+    <p>Alguns elementos HTML serão exibidos corretamente, mesmo se você esquecer a tag final:</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exinside">
+            <p><code>&lt;html&gt;</code></p>
+            <p><code>&lt;body&gt;</code></p>
+            <p><code>&lt;p&gt;</code>Isso é um parágrafo</p>
+            <p><code>&lt;p&gt;</code>Isso é um parágrafo</p>
+
+            <p><code>&lt;/body&gt;</code></p>
+            <p><code>&lt;/html&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <div class="exinside" style="font-family: Arial, Helvetica, sans-serif;">
+                <p>Isso é um parágrafo
+                <p>Isso é um parágrafo
+            </div>
+        </details>
+    </section>
+    <p><b>No entanto, nunca confie nisso! Resultados inesperados e erros podem ocorrer se você esquecer a tag final!</b></p>
+    <hr>
+    <h1>Elementos HTML vazios</h1>
+    <p>Os elementos sem conteúdo são chamados de elementos vazios</p>
+    <p>A tag <code class="codebkg">&lt;br&gt;</code> define uma quebra de linha, e é um elemento vazio sem uma tag final:</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exinside">
+            <p><code>&lt;p&gt;</code>Isso é um <code>&lt;br&gt;</code> parágrafo com quebra de linha<code>&lt;/p&gt;</code> </p>
+        </div>
+<details>
+    <summary>Resultado</summary>
+        <div class="resultado">
+            <p>Isso é um <p>parágrafo com uma quebra de linha</p></p>
+        </div>
+</details>
+    </section>
+
+
+    <h1>HTML não diferencia maiúsculas de minúsculas</h1>
+    <p>As tags HTML não diferenciam maiúsculas de minúsculas: <code class="codebkg">&lt;P&gt;</code> significa o mesmo que
+        <code class="codebkg">&lt;p&gt;</code>.</p>
+    <p>O padrão HTML não requer tags em minúsculas, mas <b>recomendamos</b> minúsculas em HTML e <b>exige</b> minúsculas
+        para tipos de documentos mais restritos como XHTML.</p>
+    <nav class="button"><a href="basic.html">Anterior</a> <a href="attributes.html">Pŕoxima</a> </nav>
+</body>
+
+</html>

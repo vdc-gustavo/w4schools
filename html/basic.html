@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../media/img/favicon.ico" type="image/x-icon">
+    <title>HTML básico</title>
+</head>
+
+<body>
+    <div class="w4-top-menu" style="position: fixed;">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVASCRIPT</a>
+        <a href="#">SQL</a>
+        <a href="#">PYTHON</a>
+        <a href="#">PHP</a>
+        <a href="#">BOOTSTRAP</a>
+    </div>
+    <br>
+    <br>
+    <main>
+        <h1 style="margin-top: 0;">Exemplos básicos de HTML</h1>
+        <button class="w4-button"><a href="editors.html" class="a-prev-page">Anterior</a></button>
+        <button class="w4-button"><a href="elements.html" class="a-next-page">Próxima</a></button>
+        <hr>
+        <p>Neste capítulo, mostraremos alguns exemplos básicos de HTML.</p>
+        <p>Não se preocupe se usarmos tags que você ainda não conhece.</p>
+        <hr>
+        <h1>Documentos HTML</h1>
+        <p>Todos os documentos HTML devem começar com uma declaração de tipo de documento: <code class="w4-codespan">&lt;!DOCTYPE html&gt;</code>
+        .</p>
+        <p>O próprio documento HTML começa com <code class="w4-codespan">&lt;html&gt;</code> e termina com <code class="w4-codespan">&lt;/html&gt;</code>.</p>
+        <p>A parte visível do documento HTML está entre&lt;body&gt; e &lt;/body&gt;.</p>
+        <section class="exemplo">
+            <h3>Exemplo</h3>
+            <div class="exinside">
+                    <p>&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;html&gt;</p>
+                    <p>&lt;body&gt;</p>
+                    <p>&lt;h1&gt;Meu primeiro título&lt;/h1&gt;</p>
+                    <p>&lt;p&gt;Meu primeiro parágrafo&lt;/p&gt;</p>
+                    <p>&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p>
+            </div>
+            <details>
+                <summary>Resultado</summary>
+                <div class="exinside">
+                    <h1>Meu primeiro título</h1>
+                    <p>Meu primeiro parágrafo</p>
+                </div>
+            </details>
+        </section>
+        <h1>A declaração &lt;!DOCTYPE&gt;</h1>
+        <p>A declaração <code class="codebkg">&lt;!DOCTYPE&gt;</code> representa o tipo de documento e ajuda os navegadores a exibir as
+            páginas da web
+            corretamente.</p>
+        <p><em>Deve aparecer apenas uma vez, no topo da página (antes de quaisquer tags HTML).</em></p>
+        <p>A declaração <code class="codebkg">&lt;!DOCTYPE&gt;</code> não faz distinção entre maiúsculas e minúsculas.</p>
+        <p>A declaração <code class="codebkg">&lt;!DOCTYPE&gt;</code> para HTML5 é:</p>
+        <section class="exemplo-s">
+            <div class="exinside" style="margin-top: 0px;">
+                <p><code>&lt;!DOCTYPE html&gt;</code></p>
+            </div>
+        </section>
+        <h1>Cabeçalhos HTML</h1>
+        <p>Os cabeçalhos HTML são definidos com as tags <code class="codebkg">&lt;h1&gt;</code> a <code class="codebkg">&lt;h6&gt;</code>.</p>
+        <p><code class="codebkg">&lt;h1&gt;</code> define o cabeçalho de nível maior. <code class="codebkg">&lt;h6&gt;</code> define o cabeçalho de nível
+            menor</p>
+        <section class="exemplo">
+            <h3>Exemplo</h3>
+            <div class="exinside">
+                <p><code>&lt;h1&gt;</code>Isso é um cabeçalho de nível 1<code>&lt;/h1&gt;</code></p>
+                <p><code>&lt;h2&gt;</code>Isso é um cabeçalho de nível 2<code>&lt;/h2&gt;</code></p>
+                <p><code>&lt;h3&gt;</code>Isso é um cabeçalho de nível 3<code>&lt;/h3&gt;</code></p>
+            </div>
+            <details>
+                <summary>Resultado</summary>
+                <div class="exinside">
+                    <h1>Isso é um cabeçalho de nível 1</h1>
+                    <h2 style="font-size: 1.33em;">Isso é um cabeçalho de nível 2</h2>
+                    <h3>Isso é um cabeçalho de nível 3</h3>
+                </div>
+            </details>
+        </section>
+        <h1>Parágrafos em HTML</h1>
+        <p>Parágrafos em HTML são definidos com a tag <code class="codebkg">&lt;p&gt;</code></p>
+        <section class="exemplo">
+            <h3>Exemplos</h3>
+            <div class="exinside">
+                <p><code>&lt;p&gt;</code>Isso é um parágrafo<code>&lt;/p&gt;</code></p>
+                <p><code>&lt;p&gt;</code>Isso é outro parágrafo<code>&lt;/p&gt;</code></p>
+            </div>
+            <details >
+                <summary>Resultado</summary>
+                <div class="exinside">
+                    <p>Isso é um parágrafo</p>
+                    <p>Isso é outro parágrafo</p>
+                </div>
+            </details>
+        </section>
+        <h1>Links em HTML</h1>
+        <p>Links em HTML são definidos com a tag <code class="codebkg">&lt;a&gt;</code></p>
+        <section class="exemplo">
+            <h3>Exemplo</h3>
+            <div class="exinside">
+                <p><code>&lt;a href="G3XiSchools.com"&gt;</code>Isso é um link<code>&lt;/a&gt;</code></p>
+            </div>
+            <details>
+                <summary>Resultado</summary>
+                <div class="exinside">
+                    <a href="index.html">Isso é um link</a>
+                </div>
+            </details>
+        </section>
+        <p>O destino do link é especificado no atributo <em>href</em>.</p>
+        <p>Os atributos são usados ​​para fornecer informações adicionais sobre os elementos HTML.</p>
+        <p>Você aprenderá mais sobre atributos em um capítulo posterior.</p>
+        <hr>
+        <h1>Imagens em HTML</h1>
+        <p>Imagens em HTML são definidas com a tag <code class="codebkg">&lt;img&gt;</code></p>
+        <p>O arquivo de origem (src), texto alternativo (alt), largura e altura são fornecidos como atributos:</p>
+        <section class="exemplo">
+            <h3>Exemplo</h3>
+            <div class="exinside">
+                <p><code> &lt;img src="unknown.png" alt="unknown" width="104" height="142"&gt; </code></p>
+            </div>
+            <details>
+                <summary>Resultado</summary>
+                <div class="exinside">
+                    <img src="unknown.png" alt="desconhecido" width="104" height="142">
+                </div>
+            </details>
+        </section>
+        <h2>Como visualizar o código fonte HTML da página?</h2>
+        <p>Você já viu uma página da Web e se perguntou "Ei! Como eles fizeram isso?"</p>
+        <h3>Ver código fonte da página</h3>
+        <p>Clique com o botão direito em uma página HTML e selecione "Exibir código fonte da página" (no Opera), "Visualizar Fonte da Página" (no Chrome) ou "Ver origem" (no Edge), etc. Isso abrirá uma nova aba contendo o código fonte HTML da página.</p>
+        <h2>Inspecionar um elemento HTML</h2>
+        <p>Clique com o botão direito do mouse em um elemento (ou em uma área em branco)  e escolha "Inspecionar" ou "Inspecionar elemento" para ver quais elementos são compostos (você verá o HTML e as CSS). Você também pode editar o HTML ou CSS no painel que se abrir.</p>
+    </main>
+    <nav class="button">
+        <a href="editors.html">Anterior</a> <a href="elements.html">Próxima</a>
+    </nav>
+</body>
+
+</html>

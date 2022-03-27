@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../media/img/favicon.ico" type="image/x-icon">
+    <title>Formatação HTML</title>
+</head>
+
+<body>
+    <h2>Formatação HTML</h2>
+    <p>O HTML contém vários elementos para definir o texto com um significado especial.</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><b>Esse texto está em negrito</b></p>
+            <p><i>Esse texto está em itálico</i></p>
+            <p>Esse é um texto <sub>subscrito</sub> e <sup>sobrescrito</sup></p>
+        </div>
+        <details style="background-color:#242323; color: white;">
+            <summary>Código</summary>
+            <p><code>&lt;p&gt;&lt;b&gt;</code> Esse texto está em negrito <code>&lt;/b&gt;&lt;/p&gt;</code></p>
+            <p><code>&lt;p&gt;&lt;i&gt;</code> Esse texto está em itálico <code>&lt;/i&gt;&lt;/p&gt;</code></p>
+            <p><code>&lt;p&gt;</code> Esse é um texto <code>&lt;sub&gt;</code> subscrito <code>&lt;/sub&gt;</code> e
+                <code>&lt;sup&gt;</code> sobrescrito <code>&lt;/sup&gt;&lt;/p&gt;</code></p>
+        </details>
+    </div>
+    <h2>Elementos de formatação HTML</h2>
+    <p>Os elementos de formatação foram projetados para exibir tipos especiais de texto:</p>
+    <ul>
+        <li><code class="codef">&lt;b&gt;</code> Texto em negrito</li>
+        <li><code class="codef">&lt;strong&gt;</code> Texto importante</li>
+        <li><code class="codef">&lt;i&gt;</code> Texto em itálico</li>
+        <li><code class="codef">&lt;em&gt;</code> Texto enfatizado</li>
+        <li><code class="codef">&lt;mark&gt;</code> Texto marcado</li>
+        <li><code class="codef">&lt;small&gt;</code> Texto pequeno</li>
+        <li><code class="codef">&lt;del&gt;</code> Texto excluído</li>
+        <li><code class="codef">&lt;ins&gt;</code> Texto inserido</li>
+        <li><code class="codef">&lt;sub&gt;</code> Texto subscrito</li>
+        <li><code class="codef">&lt;sup&gt;</code> Texto sobrescrito</li>
+    </ul>
+    <h2>Elementos &lt;b&gt; e &lt;strong&gt;</h2>
+    <p>O elemento <code class="codef">&lt;b&gt;</code> define um texto em negrito, sem muita importância.</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code class="codeex">&lt;b&gt;</code>Esse texto está em negrito<code class="codeex">&lt;/b&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline"><b>Esse texto está em negrito</b></p>
+        </details>
+    </div>
+    <p>O elemento <code class="codef">&lt;strong&gt;</code> define o texto com grande importância. O conteúdo interno é
+        normalmente exibido em negrito.</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code class="codeex">&lt;strong&gt;</code>Esse texto é importante!<code
+                    class="codeex">&lt;/strong&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline"><strong>Esse texto é importante!</strong></p>
+        </details>
+    </div>
+    <h2>Elementos &lt;i&gt; e &lt;em&gt;</h2>
+    <p>O elemento <code class="codef">&lt;i&gt;</code> define uma parte do texto em uma voz ou humor alternativo. O conteúdo interno é normalmente
+        exibido em itálico.</p>
+    <p class="nota">Dica: A tag <code>&lt;i&gt;</code> é frequentemente usada para indicar um termo técnico, uma frase
+        de outro idioma um pensamento, um nome de um navio, etc.</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code class="codeex">&lt;i&gt;</code>Esse texto está em itálico<code class="codeex">&lt;/i&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline"><i>Esse texto está em itálico</i></p>
+        </details>
+    </div>
+    <p>O elemento <code class="codef">&lt;em&gt;</code> define o texto enfatizado. O conteúdo interno é exibido normalmente em itálico.</p>
+    <p class="nota">Dica: um leitor de tela pronunciará as palavras em <code>&lt;em&gt;</code> com ênfase, usando ênfase
+        verbal.</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code>&lt;em&gt;</code>Esse texto está enfatizado<code>&lt;/em&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline"><em>Esse texto está enfatizado</em></p>
+        </details>
+    </div>
+    <h2>Elemento &lt;small&gt;</h2>
+    <p>O elemento <code class="codef">&lt;small&gt;</code> define um texto pequeno:</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code>&lt;small&gt;</code>Esse é um texto pequeno<code>&lt;/small&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline"><small>Esse é um texto menor.</small></p>
+        </details>
+    </div>
+    <h2>Elemento &lt;mark&gt;</h2>
+    <p>O elemento <code class="codef">&lt;mark&gt;</code> define o texto que deve ser marcado ou destacado:</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code>&lt;p&gt;</code>Do not forget to buy <code>&lt;mark&gt;</code>milk<code>&lt;/mark&gt;</code>
+                today.<code>&lt;/p&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline">Do not forget to buy <mark>milk</mark> today.</p>
+        </details>
+    </div>
+    <h2>Elemento &lt;del&gt;</h2>
+    <p>O elemento <code class="codef">&lt;del&gt;</code> define o texto que foi excluído de um documento. Os navegadores geralmente riscarão uma
+        linha no texto excluído.</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code>&lt;p&gt;</code>Minha cor favorita é <code>&lt;del&gt;</code> azul <code>&lt;/del&gt;</code>
+                vermelho.<code>&lt;/p&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline">Minha cor favorita é <del>azul</del> vermelho.</p>
+        </details>
+    </div>
+    <h2>Elemento &lt;ins&gt;</h2>
+    <p>O elemento <code class="codef">&lt;ins&gt;</code> define um texto que foi inserido em um documento. Os navegadores geralmente sublinham o
+        texto inserido.</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code>&lt;p&gt;</code>Minha cor favorita é
+                <code>&lt;del&gt;</code>azul<code>&lt;/del&gt;&lt;ins&gt;</code>vermelho.<code>&lt;/ins&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p>Minha cor favorita é <del> azul </del><ins>vermelho</ins>.</p>
+        </details>
+    </div>
+    <h2>Elemento &lt;sub&gt;</h2>
+    <p>O elemento <code class="codef">&lt;sub&gt;</code> define o texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal
+        e, as vezes, é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas como
+        H<sub>2</sub>O:</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code>&lt;p&gt;</code>Esse é um texto <code>&lt;sub&gt;</code>subscrito.<code>&lt;/sub&gt;&lt;/p&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline">Esse é um texto <sub>subscrito.</sub></p>
+        </details>
+    </div>
+    <h2>Elemento &lt;sup&gt;</h2>
+    <p>O elemento <code class="codef">&lt;sup&gt;</code> define o texto sobrescrito. O texto sobrescrito aparece com meio caractere acima da linha normal e, as vezes, é renderizado com uma fonte menor. Texto sobrescrito pode ser usado para notas de rodapé, como WWW<sup>[1]</sup></p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exemplo1">
+            <p><code>&lt;p&gt;</code>Esse é um texto <code>&lt;sup&gt;</code>sobrescrito<code>&lt;/sup&gt;&lt;/p&gt;</code></p>
+        </div>
+        <details>
+            <summary>Resultado</summary>
+            <p class="underline">Esse é um texto <sup>sobrescrito.</sup></p>
+        </details>
+    </div>
+    <a href="quotations.html">Quotações</a>
+    <br>
+    <a href="index2.html">Índice</a>
+</body>
+
+</html>
