@@ -5,9 +5,11 @@
 :root {
     --cor1: #04aa6d;
     --cor2: #059862;
-    --cor3: #D9EEE1;
-    --cor4: #CCCCCC;
-    --cor5: #eeeeee;
+    --cor3: #000000;
+    --cor4: #202020;
+    --cor5: #D9EEE1;
+    --cor6: #CCCCCC;
+    --cor7: #eeeeee;
 }
 
 body {
@@ -15,3 +17,106 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
 }
+
+main h2 {
+    font-size: 4em ;
+}
+
+div#index-learn-to-code{
+    background-color: #282A35;
+    width: 100%;
+    height: 280px;
+    padding: 90px 0px ;
+
+}
+
+div#index-learn-to-code > h1,
+div#index-learn-to-code h4 > a{
+    color: #fff;
+}
+
+div#index-learn-to-code h1{
+    font-size: 50px;
+}
+
+div#index-learn-to-code > h3{
+    color: #FFC0C7;
+    font-size: 21px;
+}
+
+div#index-learn-to-code h4 > a{
+    font-size: 21px;
+}
+
+div.index-box{
+    width: 100%;
+    height: 270px;
+    padding: 90px 0px;
+}
+
+/* G R E E N */
+
+button.w4-button-learn{
+    display: block;
+    margin: 25px auto;
+    background-color: var(--cor1);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 25px;
+}
+
+button.w4-button-learn:hover{
+    background-color: var(--cor2);
+}
+
+button.w4-button-learn > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.115em;
+}
+
+/* G R A Y */
+
+button.w4-button-learn-gray{
+    display: block;
+    margin: 25px auto;
+    background-color: var(--cor4);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 25px;
+}
+
+button.w4-button-learn-gray:hover{
+    background-color: var(--cor3);
+}
+
+button.w4-button-learn-gray > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.115em;
+}
+
+/* Y E L L O W */
+
+button.w4-button-learn-yellow{
+    display: block;
+    margin: 25px auto;
+    background-color: #fcf1a2;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 25px;
+}
+
+button.w4-button-learn-yellow:hover{
+    background-color: #FFF080;
+}
+
+button.w4-button-learn-yellow > a{
+    color: black ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.115em;
+}
+
