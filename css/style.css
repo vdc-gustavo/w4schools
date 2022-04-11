@@ -18,8 +18,21 @@ body {
     margin: 0px;
 }
 
+nav.top-bar-fixed{
+    width: 100%;
+    background-color: #fff;
+}
+
+button.w4-top-bar-button{
+    padding: 10px;
+}
+
+button.w4-top-bar-button > a{
+    text-decoration: none;
+}
+
 main h2 {
-    font-size: 4em ;
+    font-size: 50px ;
 }
 
 div#index-learn-to-code{
@@ -42,6 +55,7 @@ div#index-learn-to-code h1{
 div#index-learn-to-code > h3{
     color: #FFC0C7;
     font-size: 21px;
+    text-indent: 20px ;
 }
 
 div#index-learn-to-code h4 > a{
@@ -50,7 +64,7 @@ div#index-learn-to-code h4 > a{
 
 div.index-box{
     width: 100%;
-    height: 270px;
+    height: 370px;
     padding: 90px 0px;
 }
 
@@ -120,3 +134,46 @@ button.w4-button-learn-yellow > a{
     font-size: 1.115em;
 }
 
+/* W H I T E */
+
+button.w4-button-learn-white{
+    display: block;
+    margin: 25px auto;
+    background-color: #fff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 25px;
+}
+
+button.w4-button-learn-white:hover{
+    background-color: #eeeeee;
+}
+
+button.w4-button-learn-white > a{
+    color: black ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.115em;
+}
+
+/* D A R K  B L U E */
+
+button.w4-button-learn-darkblue{
+    display: block;
+    margin: 25px auto;
+    background-color: #fff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 25px;
+}
+
+button.w4-button-learn-darkblue:hover{
+    background-color: #eeeeee;
+}
+
+button.w4-button-learn-darkblue > a{
+    color: black ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.115em;
+}
