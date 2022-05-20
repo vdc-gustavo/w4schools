@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'Consolas';
     src: url('../media/font/CONSOLA.TTF') format('truetype');
-  }
+}
 
 :root {
     --cor1: #666ead;
@@ -16,6 +16,7 @@
     --cor6: #CCCCCC;
     --cor7: #eeeeee;
     --cor8: #8c00ff;
+    --cor9: #02ac10;
 }
 
 body {
@@ -27,125 +28,38 @@ body {
 
 main {
     padding: 32px;
-    margin-left: -16px ;
-    margin-right: -16px ;
+    margin-left: -16px;
+    margin-right: -16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: normal;
-}
 
-main>h1{
-    font-size: 42px;
-}
-
-main>h2 {
-    font-size: 2em;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #eee;
-    margin: 20px -16px;
-}
-
-div.tutorial-bkg-color {
-    margin-left: -32px;
-    margin-right: -32px;
-    background-color: #D9EEE1;
-    padding: 20px;
-    margin-top: 15px;
-}
-
-div.tutorial-bkg-color p,
-div.tutorial-bkg-color button {
-    margin-left: 20px;
-}
-
-/* DIVS DE EXEMPLO */
-
-span.tagcolor{
-    color: blue;
-}
-
-span.textcolor{
-    color: brown;
-}
-
-span.attributecolor{
-    color: red;
-}
-
-section.exemplo{
-    background-color: var(--cor5);
-    padding: 8px 16px;
-    margin: 24px -32px;
-}
-
-section.exemplo>h3{
-    font-size: 1.5em;
-    margin-top: 10px ;
-    margin-bottom: 10px ;
-}
-
-section.exemplo>details>summary{
-    margin-top: 15px ;
-    margin-bottom: 10px ;
-}
-
-div.ex-inside{
-    font-family: Consolas, monospace;
-    font-size: 15px;
-    border-left: 4px solid var(--cor1) ;
-    width: auto;
-    background-color: #fff;
-    color: #000;
-    padding: 8px 12px;
-}
-
-div.ex-inside>p{
-    margin-top: 5px;
-    margin-bottom: 5px ;
-}
-
-div.ex-resultado{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    border-left: 4px solid var(--cor8) ;
-    width: auto;
-    background-color: #fff;
-    color: #000;
-    padding: 8px 12px;
-}
-
-div.ex-resultado>p{
-    margin-top: 5px;
-    margin-bottom: 5px ;
-}
 
 /* DIVS DE EXEMPLO */
 
 /* CONFIGS DE TEXTO */
 
-code.codespan{
+code.codespan {
     color: crimson;
     font-size: 105%;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 4px;
     font-family: Consolas, monospace;
-    background-color: #dedede4d ;
+    background-color: #dedede4d;
 }
 
-p.nota{
+p.nota {
     background-color: #ffffcc;
     margin: 24px -32px;
     padding: 16px 32px;
+}
+
+p.dica{
+    background-color: #ccecff;
+    margin: 24px -32px;
+    padding: 16px 32px;
+}
+
+span.tagcolor{
+    color: red;
 }
 
 /* CONFIGS DE TEXTO */
@@ -154,52 +68,29 @@ p.nota{
 
 /* BOTÃO GLOBAL */
 
-button.w4-button {
-    background-color: var(--cor1);
-    border: none;
-    padding: 14px 20px;
-    border-radius: 25px 10px ;
-}
-
-button.w4-button:hover{
-    background-color: var(--cor2);
-    text-decoration: underline;
-}
-
-button.w4-button>a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 /* BOTÃO GLOBAL */
 
 /* BOTÃO CINZA */
 
-button.w4-button-gray{
-    background-color: var(--cor6)!important;
-}
-
 /* BOTÃO CINZA */
 
 /* BOTÃO PÁGINA ANTERIOR */
 
-button.w4-button-previous{
-    border-radius: 40px 10px 10px 40px !important;
-}
-
 /* BOTÃO PÁGINA ANTERIOR */
 
 /* BOTÃO PRÓXIMA PÁGINA */
-
-button.w4-button-next{
-    border-radius: 10px 40px 40px 10px !important;
-}
 
 /* BOTÃO PRÓXIMA PÁGINA */
 
 /* BOTÕES */
 
 /* GAMBI */
+
+div.card-index-end{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px 6px;
+    text-align: center;
+}
 
 /* GAMBI */

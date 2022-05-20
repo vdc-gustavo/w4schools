@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="../w4schools/media/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>W4schools Tutoriais Web Online </title>
     <style>
+
         h1,
         h2,
         h3,
@@ -17,118 +19,9 @@
             font-weight: bold;
         }
 
-        main{
+        main {
             padding: 0px;
         }
-
-        /* Y E L L O W */
-
-        button.w4-button-learn-yellow {
-            display: block;
-            margin: 25px auto;
-            background-color: #fcf1a2;
-            border: none;
-            padding: 14px 40px;
-            border-radius: 25px;
-        }
-
-        button.w4-button-learn-yellow:hover {
-            background-color: #FFF080;
-        }
-
-        button.w4-button-learn-yellow>a {
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.115em;
-        }
-
-        /* W H I T E */
-
-        button.w4-button-learn-white {
-            display: block;
-            margin: 25px auto;
-            background-color: #fff;
-            border: none;
-            padding: 14px 40px;
-            border-radius: 25px;
-        }
-
-        button.w4-button-learn-white:hover {
-            background-color: #eeeeee;
-        }
-
-        button.w4-button-learn-white>a {
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.115em;
-        }
-
-        /* D A R K  B L U E */
-
-        button.w4-button-learn-darkblue {
-            display: block;
-            margin: 25px auto;
-            background-color: #fff;
-            border: none;
-            padding: 14px 40px;
-            border-radius: 25px;
-        }
-
-        button.w4-button-learn-darkblue:hover {
-            background-color: #eeeeee;
-        }
-
-        button.w4-button-learn-darkblue>a {
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.115em;
-        }
-
-        button.w4-button-learn {
-            display: block;
-            margin: 25px auto;
-            background-color: var(--cor1);
-            border: none;
-            padding: 14px 40px;
-            border-radius: 25px;
-        }
-
-        button.w4-button-learn:hover {
-            background-color: var(--cor2);
-        }
-
-        button.w4-button-learn>a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.115em;
-        }
-
-        /* G R A Y */
-
-        button.w4-button-learn-gray {
-            display: block;
-            margin: 25px auto;
-            background-color: var(--cor4);
-            border: none;
-            padding: 14px 40px;
-            border-radius: 25px;
-        }
-
-        button.w4-button-learn-gray:hover {
-            background-color: var(--cor3);
-        }
-
-        button.w4-button-learn-gray>a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.115em;
-        }
-
 
         div#index-learn-to-code {
             background-color: #282A35;
@@ -144,7 +37,7 @@
         }
 
         div#index-learn-to-code h1 {
-            font-size: 50px;
+            font-size: 45px;
         }
 
         div#index-learn-to-code>h3 {
@@ -155,6 +48,7 @@
 
         div#index-learn-to-code h4>a {
             font-size: 21px;
+            text-decoration: underline;
         }
 
         div.index-box {
@@ -170,9 +64,15 @@
         <div id="index-learn-to-code">
             <h1>Aprenda a Codificar</h1>
             <h3>Com o maior site de desenvolvedores web do mundo (ou quase).</h3>
+            <div>
+                <form action="">
+                    <input type="text" placeholder="Pesquise algo">
+                    <input type="submit" >
+                </form>
+              </div>
             <h4><a href="#">Não sabe por onde começar?</a></h4>
         </div>
-        <div class="index-box" style="background-color: #D9EEE1;">
+        <div class="index-box" style="background-color: #db9f44; color: white;">
             <h2>HTML</h2>
             <h3>A linguagem para construção de páginas web</h3>
             <button class="w4-button-learn" style="padding-left: 36px ; padding-right: 36px ;">
@@ -185,7 +85,7 @@
                 <a href="#">Referências HTML</a>
             </button>
         </div>
-        <div class="index-box" style="background-color: #FFF4A3;">
+        <div class="index-box" style="background-color: #56915e; color: white;">
             <h2>CSS</h2>
             <h3>A linguagem de estilização de páginas web</h3>
             <button class="w4-button-learn">
@@ -195,7 +95,7 @@
                 <a href="#">Referências CSS</a>
             </button>
         </div>
-        <div class="index-box" style="background-color: #0D1721; color: white ;">
+        <div class="index-box" style="background-color: #ffe600;">
             <h2>JavaScript</h2>
             <h3>A linguagem de programação das páginas web</h3>
             <button class="w4-button-learn">
@@ -205,7 +105,7 @@
                 <a href="#">Referências JavaScript</a>
             </button>
         </div>
-        <div class="index-box" style="background-color: #F3ECEA;">
+        <div class="index-box" style="background-color: #fff2bb;">
             <h2>Python</h2>
             <h3>Uma linguagem de programação popular</h3>
             <button class="w4-button-learn">
@@ -218,10 +118,10 @@
         <div class="index-box" style="background-color: #96D4D4;">
             <h2>SQL</h2>
             <h3>Uma linguagem para acessar banco de dados</h3>
-            <button>
+            <button class="w4-button-learn">
                 <a href="#">Aprenda SQL</a>
             </button>
-            <button>
+            <button class="w4-button-learn">
                 <a href="#">Referências SQL</a>
             </button>
         </div>
@@ -255,13 +155,6 @@
                 </button>
             </section>
             <section>
-                <h2>W3.CSS</h2>
-                <h3>Uma framework CSS para páginas da Web mais rápidas e responsivas</h3>
-                <button>
-                    <a href="#">Aprenda W3.CSS</a>
-                </button>
-            </section>
-            <section>
                 <h2>Bootstrap</h2>
                 <h3>Um framework CSS para projetar melhores páginas da web</h3>
                 <button>
@@ -269,115 +162,182 @@
                 </button>
             </section>
         </div>
-        <div>
-            <section>
-                <a href="#">C</a>
-            </section>
-            <section>
-                <a href="#">C#</a>
-            </section>
-            <section>
-                <a href="#">R</a>
-            </section>
-            <section>
-                <a href="#">Kotlin</a>
-            </section>
-            <section>
-                <a href="#">Node.js</a>
-            </section>
-            <section>
-                <a href="#">React</a>
-            </section>
-            <section>
-                <a href="#">JSON</a>
-            </section>
-            <section>
-                <a href="#">AngularJS</a>
-            </section>
-            <section>
-                <a href="#">MySQL</a>
-            </section>
-            <section>
-                <a href="#">XML</a>
-            </section>
-            <section>
-                <a href="#">Sass</a>
-            </section>
-            <section>
-                <a href="#">Icons</a>
-            </section>
-            <section>
-                <a href="#">RWD</a>
-            </section>
-            <section>
-                <a href="#">Graphics</a>
-            </section>
-            <section>
-                <a href="#">SVG</a>
-            </section>
-            <section>
-                <a href="#">Canvas</a>
-            </section>
-            <section>
-                <a href="#">Raspberry Pi</a>
-            </section>
-            <section>
-                <a href="#">Cyber Security</a>
-            </section>
-            <section>
-                <a href="#">Colors</a>
-            </section>
-            <section>
-                <a href="#">Git</a>
-            </section>
-            <section>
-                <a href="#">Matplotlib</a>
-            </section>
-            <section>
-                <a href="#">NumPy</a>
-            </section>
-            <section>
-                <a href="#">Pandas</a>
-            </section>
-            <section>
-                <a href="#">SciPy</a>
-            </section>
-            <section>
-                <a href="#">ASP</a>
-            </section>
-            <section>
-                <a href="#">Acessibility</a>
-            </section>
-            <section>
-                <a href="#">AppML</a>
-            </section>
-            <section>
-                <a href="#">Go</a>
-            </section>
-            <section>
-                <a href="#">W3.JS</a>
-            </section>
-            <section>
-                <a href="#">Django</a>
-            </section>
-            <section>
-                <a href="#">Excel</a>
-            </section>
-            <section>
-                <a href="#">Google Sheets</a>
-            </section>
-            <section>
-                <a href="#">Machine Learning</a>
-            </section>
-            <section>
-                <a href="#">Artificial Intelligence</a>
-            </section>
-            <section>
-                <a href="#">Statistics</a>
-            </section>
-            <section>
-                <a href="#">Data Science</a>
-            </section>
+        <div class="container columns">
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #3645A1; color: white ;">
+                    <h2>C</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #A179DC ; color: white ;">
+                    <h2>C#</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: red ; color: white ;">
+                    <h2>R</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #6A76E2 ; color: white ;">
+                    <h2>Kotlin</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #7EC729 ; color: white ;">
+                    <h2>Node.js</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #5ED3F3 ; color: white ;">
+                    <h2>React</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #a1a1a1;">
+                    <h2>JSON</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #D2002F ; color: white ;">
+                    <h2>AngularJS</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #005C83 ; color: white ;">
+                    <h2>MySQL</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #EE9B40 ;">
+                    <h2>XML</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #C36291 ; color: white ;">
+                    <h2>Sass</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #2CA8DF ;">
+                    <h2>Icons</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #0072B1 ; color: white ;">
+                    <h2>RWD</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #4f038d ; color: white ;">
+                    <h2>Graphics</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #2B2A29 ; color: white ;">
+                    <h2>SVG</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #D63A27 ; color: white ;">
+                    <h2>Canvas</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #B2103F ; color: white ;">
+                    <h2>Raspberry Pi</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #37C8FD ;">
+                    <h2>Cyber Security</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #480083 ; color: rgb(43, 255, 0) ;">
+                    <h2>Colors</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #E44C30 ; color: #3A2B00 ;">
+                    <h2>Git</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #7AE17A ;">
+                    <h2>Matplotlib</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #49A2C4 ;">
+                    <h2>NumPy</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #120750 ; color: #F2C000 ;">
+                    <h2>Pandas</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #012549 ; color: white ;">
+                    <h2>SciPy</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #84ce84 ;">
+                    <h2>ASP</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #ffe2e2 ;">
+                    <h2>Acessibility</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #026DB1 ; color: white ;">
+                    <h2>AppML</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #00A3CC ; color: white ;">
+                    <h2>Go</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #2F72BC ; color: white ;">
+                    <h2>TypeScript</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #092D1E ; color: white ;">
+                    <h2>Django</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #1F6D41 ; color: white ;">
+                    <h2>Excel</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #797367 ; color: white ;">
+                    <h2>Machine Learning</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: #2B3441 ; color: white ;">
+                    <h2>Artificial intelligence</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end" style="background-color: saddlebrown ; color: white ;">
+                    <h2>Statistics</h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="column box card-index-end">
+                    <h2>Data Science</h2>
+                </div>
+            </a>
         </div>
     </main>
 </body>

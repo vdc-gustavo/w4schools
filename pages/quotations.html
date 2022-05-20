@@ -6,17 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../media/img/favicon.ico" type="image/x-icon">
-    <title>Quotações</title>
+    <link rel="shortcut icon" href="../media/logo/favicon.ico" type="image/x-icon">
+    <title>HTML - Quotações</title>
 </head>
 
 <body>
-    <h1>Quotações e citações</h1>
-    <p>Nesse capítulo vamos dar uma olhada nos elementos <code>&lt;blockquote&gt; &lt;q&gt; &lt;abbr&gt; &lt;adress&gt;
-            &lt;cite&gt; e &lt;bdo&gt;.</code></p>
-    <div class="codigo">
+    <h1>Elementos de Quotação e citação em HTML</h1>
+    <button class="w4-button w4-button-previous"><a href="../pages/formating.html">Anterior</a></button>
+    <button class="w4-button w4-button-next"><a href="../pages/comments.html">Próxima</a></button>
+    <hr>
+    <p>Nesse capítulo vamos dar uma olhada nos elementos
+        <span class="tagcolor">&lt;</span><span class="attributecolor">blockquote</span><span
+            class="tagcolor">&gt;</span>
+
+        <span class="tagcolor">&lt;</span><span class="attributecolor">q</span><span class="tagcolor">&gt;</span>
+
+        <span class="tagcolor">&lt;</span><span class="attributecolor">abbr</span><span class="tagcolor">&gt;</span>
+
+        <span class="tagcolor">&lt;</span><span class="attributecolor">adress</span><span class="tagcolor">&gt;</span>
+
+        <span class="tagcolor">&lt;</span><span class="attributecolor">cite</span><span class="tagcolor">&gt;</span>
+        e
+        <span class="tagcolor">&lt;</span><span class="attributecolor">bdo</span><span class="tagcolor">&gt;</span>.</p>
+    <hr>
+    <section class="exemplo">
         <h3>Exemplo</h3>
-        <div class="exinside">
+        <div class="ex-inside">
             <p>Aqui está uma citação do site da W3C:</p>
             <blockquote cite="https://www.w3c.br/Padroes/WebDesignAplicacoes">
                 HTML e CSS são as tecnologias fundamentais para o desenvolvimento de páginas Web: HTML (html e xhtml)
@@ -25,13 +40,198 @@
         </div>
         <details>
             <summary>Código</summary>
-            <p><code>&lt;p&gt;</code>Aqui está uma citação do site da W3C:<code>&lt;/p&gt;</code></p>
-            <code>&lt;blockquote cite="https://www.w3c.br/Padroes/WebDesignAplicacoes"&gt;</code>
-            HTML e CSS são as tecnologias fundamentais para o desenvolvimento de páginas Web: HTML (html e xhtml) para a
-            estrutura, CSS para o estilo e leiaute, incluindo WebFonts.
-            <code>&lt;/blockquote&gt;</code>
+            <div class="código">
+                <p><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span>Aqui está uma citação do site da
+                    W3C:<span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></p>
+                <span class="tagcolor">&lt;</span>blockquote cite="https://www.w3c.br/Padroes/WebDesignAplicacoes"<span
+                    class="tagcolor">&gt;</span>
+                HTML e CSS são as tecnologias fundamentais para o desenvolvimento de páginas Web: HTML (html e xhtml)
+                para a
+                estrutura, CSS para o estilo e leiaute, incluindo WebFonts.
+                <span class="tagcolor">&lt;</span>/blockquote<span class="tagcolor">&gt;</span>
+            </div>
+        </details>
+    </section>
+    <h2>Usando &lt;blockquote&gt; para quotações em HTML</h2>
+    <p>O elemento HTML &lt;blockquote&gt; define uma seção que é citada de outra fonte.</p>
+    <p>Os navegadores geralmente recuam elementos &lt;blockquote&gt;.</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="ex-inside">
+            <p><span class="tagcolor">&lt;</span><span class="elementcolor">p</span><span
+                    class="tagcolor">&gt;</span>Aqui está uma citação do site Wikipedia:<span
+                    class="tagcolor">&lt;</span><span class="elementcolor">/p</span><span class="tagcolor">&gt;</span>
+            </p>
+            <p><span class="tagcolor">&lt;</span><span class="elementcolor">blockquote</span> <span
+                    class="attributecolor">cite=</span><span
+                    class="attributevaluecolor">"https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_Internet"</span><span
+                    class="tagcolor">&gt;</span></p>
+            A ARPANET funcionava através de um sistema conhecido como chaveamento de pacotes, que é um sistema de
+            transmissão de dados em rede de computadores no qual as informações são divididas em pequenos pacotes, que
+            por sua vez contém trecho dos dados, o endereço do destinatário e informações que permitiam a remontagem da
+            mensagem original.
+            <p><span class="tagcolor">&lt;</span><span class="elementcolor">/blockquote</span><span
+                    class="tagcolor">&gt;</span></p>
+        </div>
+        <details>
+            <summary>Clique aqui para ver o resultado</summary>
+            <div class="ex-resultado">
+                <p>Aqui está uma citação do site Wikipedia:</p>
+
+                <blockquote cite="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_Internet">
+
+                    A ARPANET funcionava através de um sistema conhecido como chaveamento de pacotes, que é um sistema
+                    de transmissão de dados em rede de computadores no qual as informações são divididas em pequenos
+                    pacotes, que por sua vez contém trecho dos dados, o endereço do destinatário e informações que
+                    permitiam a remontagem da mensagem original.
+                </blockquote>
+            </div>
+        </details>
+    </section>
+    <hr>
+    <h2>Use a tag HTML &lt;q&gt; para citações curtas</h2>
+    <p>A tag HTML &lt;q&gt; define uma quotação curta.</p>
+    <p>Os navegadores normalmente inserem aspas ao redor da cotação.</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="ex-inside">
+            &lt;p&gt;&lt;q&gt;Já na década de 1970, a tensão entre URSS e EUA diminui.&lt;q&gt;&lt;p&gt;
+        </div>
+        <details>
+            <summary>Clique aqui para ver o resultado</summary>
+            <div class="ex-resultado">
+                <p><q>Já na década de 1970, a tensão entre URSS e EUA diminui.</q></q>
+            </div>
+        </details>
+    </section>
+    <hr>
+    <br>
+    <hr>
+    <h2>Usando a tag &lt;abbr&gt; para abreviações</h2>
+    <p>A tag HTML <abbr> define uma abreviação ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+    <p>A marcação de abreviaturas pode fornecer informações úteis para navegadores, sistemas de tradução e mecanismos de
+        busca.</p>
+    <p class="dica">Dica: Use o atributo global title para mostrar a descrição da abreviação/acrônimo ao passar o mouse
+        sobre o elemento.</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="ex-inside">
+            &lt;p&gt;A &lt;abbr title="Advanced Research Projects Agency"&gt;ARPANET&lt;/abbr&gt; foi criada em
+            1962.&lt;/p&gt;
+        </div>
+        <details>
+            <summary>Clique aqui para ver o resultado</summary>
+            <div class="ex-resultado">
+                <p>A <abbr title="Advanced Research Projects Agency">ARPANET</abbr> foi criada em 1962.</p>
+            </div>
+        </details>
+    </section>
+    <hr>
+    <h2>Usando a tag &lt;address&gt; para informações de contato</h2>
+    <p>A tag HTML &lt;address&gt; define as informações de contato do autor/proprietário de um documento ou artigo.</p>
+    <p>As informações de contato podem ser um endereço de e-mail, URL, endereço físico, número de telefone,
+        identificador de mídia social, etc.</p>
+    <p>O texto no elemento &lt;address&gt; geralmente é renderizado em itálico, e os navegadores sempre adicionam uma
+        quebra de linha antes e depois do elemento &lt;address&gt;.</p>
+    <section class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="ex-inside">
+            <p>&lt;address&gt;</p>
+            <p>Escrito por campos-gustavo.&lt;br&gt;</p>
+            <p>Visite-nos em:&lt;br&gt;</p>
+            <p>Exemplo.com.br&lt;br&gt;</p>
+            <p>Box 564, Disneylandia&lt;br&gt;</p>
+            <p>EUA</p>
+            <p>&lt;/address&gt;</p>
+        </div>
+        <details>
+            <summary>Clique aqui para ver o resultado</summary>
+            <div class="ex-resultado">
+                <address>
+                    Escrito por campos-gustavo.<br>
+                    Visite-nos em:<br>
+                    Exemplo.com.br<br>
+                    Box 564, Disneylandia<br>
+                    EUA
+                    </address>
+            </div>
+        </details>
+    </section>
+    <hr>
+    <h2>Elemento &lt;cite&gt; para títulos de trabalho</h2>
+    <p>A tag HTML &lt;cite&gt; define o título de um trabalho criativo(por exemplo, um livro, um poema, uma música, um filme, uma pintura, uma escultura, etc.).</p>
+    <p><strong>Nota:</strong>O nome de uma pessoa não deve fazer parte do título de uma obra.</p>
+    <p>O texto no elemento &lt;cite&gt; geralmente é renderizado em <i>itálico</i>.</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div>
+            &lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;
+        </div>
+        <details>
+            <summary>Clique aqui para ver o resultado</summary>
+            <div class="exemplo">
+                <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+            </div>
         </details>
     </div>
+    <hr>
+    <h2>Elemento &lt;bdo&gt; para substituição biderecional</h2>
+    <p>BDO signifca stands for Bi-Directional Override.</p>
+    <p>A tag HTML &lt;bdo&gt; é usada para substituir a direção do texto atual:</p>
+    <div class="exemplo">
+        <h3>Exemplo</h3>
+        <div class="exinside">
+            &lt;<span class="tagcolor">bdo</span> dir="rtl"&gt;Esse texto vai ser escrito da direita para a esquerda
+        </div>
+        <details>
+            <summary>Clique aqui para ver o resultado</summary>
+            <div class="exinsid">
+                <bdo dir="rtl">Esse texto vai ser escrito da direita para a esquerda</bdo>
+            </div>
+        </details>
+    </div>
+    <hr>
+    <hr>
+    <h2>Quotações HTML e elementos de citação</h2>
+    <table border="1">
+        <thead>
+            <th>
+                tag
+            </th>
+            <th>
+                Description
+            </th>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>&lt;abbr&gt;</td>
+                <td>Define uma abreviação ou um acronimo</td>
+            </tr>
+            <tr>
+                <td>&lt;address&gt;</td>
+                <td>Define uma informação de contato para o autor/dono do documento</td>
+            </tr>
+            <tr>
+                <td>&lt;bdo&gt;</td>
+                <td>Define a direção do texto</td>
+            </tr>
+            <tr>
+                <td>&lt;blockquote&gt;</td>
+                <td>Define uma seção que é citada de outra fonte</td>
+            </tr>
+            <tr>
+                <td>&lt;cite&gt;</td>
+                <td>Define o título de um trabalho</td>
+            </tr>
+            <tr>
+                <td>&lt;q&gt;</td>
+                <td>Define uma cotação em uma linha curta</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="nota">
+        Para uma vista completa de todas as tags HTML disponíveis, visite nossa <a href="#">Referência de tags HTML</a>.
+    </p>
 </body>
 
 </html>
