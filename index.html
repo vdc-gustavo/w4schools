@@ -19,6 +19,15 @@
             font-weight: bold;
         }
 
+        button.buttonblock{
+            display: block;
+            margin: 10px auto;
+        }
+
+        button.buttonblock>a{
+            font-weight: 500;
+        }
+
         main {
             padding: 0px;
         }
@@ -53,8 +62,12 @@
 
         div.index-box {
             width: 100%;
-            height: 370px;
-            padding: 90px 0px;
+            height: auto;
+            padding: 70px 40px 90px 40px;
+        }
+
+        div.index-box>h2{
+            font-size: 40px;
         }
     </style>
 </head>
@@ -64,25 +77,19 @@
         <div id="index-learn-to-code">
             <h1>Aprenda a Codificar</h1>
             <h3>Com o maior site de desenvolvedores web do mundo (ou quase).</h3>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Pesquise algo">
-                    <input type="submit" >
-                </form>
-              </div>
             <h4><a href="#">Não sabe por onde começar?</a></h4>
         </div>
-        <div class="index-box" style="background-color: #db9f44; color: white;">
+        <div class="index-box" style="background-color: #d9ebee; color: black ;">
             <h2>HTML</h2>
-            <h3>A linguagem para construção de páginas web</h3>
-            <button class="w4-button-learn" style="padding-left: 36px ; padding-right: 36px ;">
-                <a href="./pages/tutorial.html">Aprenda HTML</a>
+            <h3 class="block">A linguagem para construção de páginas web</h3>
+            <button class="button is-rounded buttonblock" style="background-color: #055698;'">
+                <a href="./pages/tutorial.html" style="color: white ;">Aprenda HTML</a>
             </button>
-            <button class="w4-button-learn-yellow">
-                <a href="#">Vídeo Tutorial</a>
+            <button class="button is-rounded buttonblock" style="background-color: #e9db60 ;">
+                <a href="#" style="color: black ;">Vídeo Tutorial</a>
             </button>
-            <button class="w4-button-learn" style="padding-left: 24px ; padding-right: 24px ;">
-                <a href="#">Referências HTML</a>
+            <button class="button is-rounded buttonblock" style="background-color: #383838 ;">
+                <a href="#" style="color: white ;">Referências HTML</a>
             </button>
         </div>
         <div class="index-box" style="background-color: #56915e; color: white;">
