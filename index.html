@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="../w4schools/media/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>W4schools Tutoriais Web Online </title>
     <style>
 
@@ -17,11 +17,14 @@
         h4 {
             text-align: center;
             font-weight: bold;
+            color: black;
         }
 
-        button.buttonblock{
+        a.block{
+            width: 220px;
             display: block;
             margin: 10px auto;
+            font-weight: 500;
         }
 
         button.buttonblock>a{
@@ -34,8 +37,8 @@
 
         div#index-learn-to-code {
             background-color: #282A35;
-            width: 100%;
-            height: 280px;
+            width: auto;
+            height: auto;
             padding: 90px 0px;
 
         }
@@ -67,7 +70,25 @@
         }
 
         div.index-box>h2{
-            font-size: 40px;
+            font-size: 50px;
+        }
+
+        .block{
+            display: block;
+        }
+
+        div.index-box-sub{
+            padding: 10px 0;
+        }
+
+        section.index-sub-box{
+            margin: auto 20px;
+            border-radius: 8px;
+            border: none;
+            padding-bottom: 20px ;
+        }
+        section.index-sub-box>h2{
+            font-size: 2.5em;
         }
     </style>
 </head>
@@ -75,108 +96,77 @@
 <body>
     <main>
         <div id="index-learn-to-code">
-            <h1>Aprenda a Codificar</h1>
-            <h3>Com o maior site de desenvolvedores web do mundo (ou quase).</h3>
-            <h4><a href="#">Não sabe por onde começar?</a></h4>
+            <h1 class="block">Aprenda a Codificar</h1>
+            <h3 class="block">Com o maior site de desenvolvedores web do mundo (ou quase).</h3>
+            <form action="">
+                <input type="search" name="" id=""><input type="button" value="pesquisa">
+            </form>
+            <h4 class="block"><a href="#">Não sabe por onde começar?</a></h4>
         </div>
         <div class="index-box" style="background-color: #d9ebee; color: black ;">
-            <h2>HTML</h2>
+            <h2 class="block">HTML</h2>
             <h3 class="block">A linguagem para construção de páginas web</h3>
-            <button class="button is-rounded buttonblock" style="background-color: #055698;'">
-                <a href="./pages/tutorial.html" style="color: white ;">Aprenda HTML</a>
-            </button>
-            <button class="button is-rounded buttonblock" style="background-color: #e9db60 ;">
-                <a href="#" style="color: black ;">Vídeo Tutorial</a>
-            </button>
-            <button class="button is-rounded buttonblock" style="background-color: #383838 ;">
-                <a href="#" style="color: white ;">Referências HTML</a>
-            </button>
+                <a href="./pages/tutorial.html" class="button is-rounded block" style="background-color:#707ca0 ; color: white ;">Aprenda HTML</a>
+                <a href="#" class="button is-rounded block" style="background-color: #595b80 ; color: white;">Vídeo Tutorial</a>
+                <a href="" class="button is-rounded block" style="background-color: #262738 ; color: white ;">Referências HTML</a>
         </div>
-        <div class="index-box" style="background-color: #56915e; color: white;">
-            <h2>CSS</h2>
-            <h3>A linguagem de estilização de páginas web</h3>
-            <button class="w4-button-learn">
-                <a href="#">Aprenda CSS</a>
-            </button>
-            <button class="w4-button-learn-gray">
-                <a href="#">Referências CSS</a>
-            </button>
+        <div class="index-box" style="background-color: #73b17b; color: white;">
+            <h2 class="block">CSS</h2>
+            <h3 class="block">A linguagem de estilização de páginas web</h3>
+                <a href="#" class="button is-rounded block" style="background-color:#707ca0 ; color: white;">Aprenda CSS</a>
+                <a href="#" class="button is-rounded block" style="background-color:#262738 ; color: white ;">Referências CSS</a>
         </div>
         <div class="index-box" style="background-color: #ffe600;">
-            <h2>JavaScript</h2>
-            <h3>A linguagem de programação das páginas web</h3>
-            <button class="w4-button-learn">
-                <a href="#">Aprenda JavaScript</a>
-            </button>
-            <button class="w4-button-learn-white">
-                <a href="#">Referências JavaScript</a>
-            </button>
+            <h2 class="block">JavaScript</h2>
+            <h3 class="block">A linguagem de programação das páginas web</h3>
+                <a href="#" class="button is-rounded block">Aprenda JavaScript</a>
+                <a href="#" class="button is-rounded block">Referências JavaScript</a>
         </div>
         <div class="index-box" style="background-color: #fff2bb;">
-            <h2>Python</h2>
-            <h3>Uma linguagem de programação popular</h3>
-            <button class="w4-button-learn">
-                <a href="#">Aprenda Python</a>
-            </button>
-            <button class="w4-button-learn-darkblue">
-                <a href="#">Referências Python</a>
-            </button>
+            <h2 class="block">Python</h2>
+            <h3 class="block">Uma linguagem de programação popular</h3>
+                <a href="#" class="button is-rounded block">Aprenda Python</a>
+                <a href="#" class="button is-rounded block">Referências Python</a>
         </div>
         <div class="index-box" style="background-color: #96D4D4;">
-            <h2>SQL</h2>
-            <h3>Uma linguagem para acessar banco de dados</h3>
-            <button class="w4-button-learn">
-                <a href="#">Aprenda SQL</a>
-            </button>
-            <button class="w4-button-learn">
-                <a href="#">Referências SQL</a>
-            </button>
+            <h2 class="block">SQL</h2>
+            <h3 class="block">Uma linguagem para acessar banco de dados</h3>
+                <a href="#" class="button is-rounded block">Aprenda SQL</a>
+                <a href="#" class="button is-rounded block">Referências SQL</a>
         </div>
-        <div class="index-box-menor">
-            <section>
+        <div class="index-box-sub block" style="background-color: #11111d ; margin-bottom: -10px ; padding-top: 20px ;">
+            <section class="index-sub-box block" style="background-color: #FFC0C7 ;">
                 <h2>PHP</h2>
                 <h3>Uma linguagem de programação de servidor web</h3>
-                <button>
-                    <a href="#">Aprenda PHP</a>
-                </button>
+                    <a href="#" class="button is-rounded block">Aprenda PHP</a>
             </section>
-            <section>
+            <section class="index-sub-box block" style="background-color: #FFF4A3 ;">
                 <h2>jQuery</h2>
                 <h3>Uma biblioteca JS para desenvolver páginas da web Aprenda jQuery</h3>
-                <button>
-                    <a href="#">Aprenda jQuery</a>
-                </button>
+                    <a href="#" class="button is-rounded block">Aprenda jQuery</a>
             </section>
-            <section>
+            <section class="index-sub-box block" style="background-color: #F3ECEA ;">
                 <h2>Java</h2>
                 <h3>Uma linguagem de programação</h3>
-                <button>
-                    <a href="#">Aprenda Java</a>
-                </button>
+                    <a href="#" class="button is-rounded block">Aprenda Java</a>
             </section>
-            <section>
+            <section class="index-sub-box block" style="background-color:#D9EEE1 ;">
                 <h2>C++</h2>
                 <h3>Uma linguagem de programação</h3>
-                <button>
-                    <a href="#">Aprenda C++</a>
-                </button>
-            </section>
-            <section>
+                    <a href="#" class="button is-rounded block">Aprenda C++</a>
+            </section class="index-sub-box block">
+            <section class="index-sub-box block" style="background-color: #E7E9EB ;">
                 <h2>Bootstrap</h2>
                 <h3>Um framework CSS para projetar melhores páginas da web</h3>
-                <button>
-                    <a href="#">Aprenda Bootstrap</a>
-                </button>
+                    <a href="#" class="button is-rounded block">Aprenda Bootstrap</a>
             </section>
-        </div>
-        <div class="container columns">
             <a href="#">
-                <div class="column box card-index-end" style="background-color: #3645A1; color: white ;">
+                <div class="column box card-index-end block" style="background-color: #3645A1; color: white ;">
                     <h2>C</h2>
                 </div>
             </a>
             <a href="#">
-                <div class="column box card-index-end" style="background-color: #A179DC ; color: white ;">
+                <div class="column box card-index-end block" style="background-color: #A179DC ; color: white ;">
                     <h2>C#</h2>
                 </div>
             </a>
